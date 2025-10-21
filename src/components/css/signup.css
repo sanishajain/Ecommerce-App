@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.signup-container input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.4);
+}
+
+/* Specific styling for email input */
+.signup-container input[type="email"] {
+ background-color: #f3f6f9;
+    width: 92%;
+
+  padding: 12px 14px;
+  border-color: #d1d5db;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.signup-container input[type="email"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  background-color: #ffffff;
+}
+
+.signup-container input[type="text"]{
+    width: 92%;
+
+}
+
+.signup-container input[type="password"]{
+    width: 86%;
+
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 40px; /* Space for eye icon */
+}
+
+.password-wrapper span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-container button:hover {
+  background: #357ab7;
+}
+
+.signup-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-container a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+}

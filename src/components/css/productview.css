@@ -1,0 +1,281 @@
+
+/* Product view container */
+.product-view {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product view heading */
+.product-view h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Product view content layout */
+.product-view-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Scrollable gallery */
+.product-gallery {
+  flex: 1;
+  min-width: 400px;
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 20px 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.product-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.product-gallery::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.product-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.product-image {
+  flex: 0 0 auto;
+  width: 600px; /* Larger like e-commerce apps */
+  height: 600px;
+  object-fit: contain; /* Preserves aspect ratio */
+  border-radius: 16px;
+  scroll-snap-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Flipkart-style pagination dots */
+.product-gallery-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.product-gallery-dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.product-gallery-dot.active {
+  background: #4a90e2; /* Matches products.css primary color */
+}
+
+/* Product details */
+.product-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-details h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 900;
+  color: #20ca67; /* Matches products.css */
+  margin: 20px 0;
+}
+
+/* Back button */
+.back-btn {
+  padding: 14px 28px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background: #f8f8f8;
+  transform: scale(1.05);
+}
+
+/* Footer buttons */
+.product-card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.cart-btn,
+.wishlist-btn {
+  padding: 18px 40px; /* Larger padding for e-commerce style */
+  border: none;
+  border-radius: 10px;
+  font-size: 18px; /* Larger font size */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cart-btn {
+  background: #4a90e2; /* Matches products.css */
+  color: #fff;
+}
+
+.cart-btn:hover {
+  background: #357abd;
+  transform: scale(1.05);
+}
+
+.wishlist-btn {
+  background: #ff6b6b; /* Matches products.css */
+  color: #fff;
+}
+
+.wishlist-btn:hover {
+  background: #ff5252;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .product-gallery {
+    min-width: 350px;
+  }
+
+  .product-image {
+    width: 500px;
+    height: 500px;
+  }
+
+  .cart-btn,
+  .wishlist-btn {
+    padding: 16px 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-view {
+    padding: 15px;
+  }
+
+  .product-view-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .product-gallery {
+    min-width: auto;
+  }
+
+  .product-image {
+    width: 400px;
+    height: 400px;
+  }
+
+  .product-gallery-dots {
+    bottom: 10px;
+  }
+
+  .product-gallery-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .product-details {
+    text-align: center;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-card-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cart-btn,
+  .wishlist-btn {
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-view h1 {
+    font-size: 24px;
+  }
+
+  .product-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .product-details h2 {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .cart-btn,
+  .wishlist-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .product-gallery-dot {
+    width: 8px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,174 @@
+
+/* Profile container */
+.profile-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile card */
+.profile-card {
+  text-align: center;
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #4a90e2;
+  transition: transform 0.2s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Profile username */
+.profile-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* Profile email */
+.profile-email {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Horizontal rule */
+.profile-card hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* Profile actions */
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Profile buttons */
+.profile-actions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  width: 100%;
+}
+
+.profile-actions button:hover {
+  transform: scale(1.05);
+}
+
+.profile-actions button:nth-child(1) {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.profile-actions button:nth-child(1):hover {
+  background: #357abd;
+}
+
+.profile-actions button:nth-child(2) {
+  background: #20ca67;
+  color: #fff;
+}
+
+.profile-actions button:nth-child(2):hover {
+  background: #1b9b50;
+}
+
+.profile-btn {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.profile-btn:hover {
+  background: #ff5252;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .profile-card {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-email {
+    font-size: 14px;
+  }
+
+  .profile-actions button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .profile-card {
+    padding: 15px;
+    max-width: 250px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-card h2 {
+    font-size: 18px;
+  }
+
+  .profile-email {
+    font-size: 13px;
+  }
+
+  .profile-actions button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}

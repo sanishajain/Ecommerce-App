@@ -1,0 +1,188 @@
+
+/* Admin orders container */
+.admin-orders {
+  width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.admin-orders h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Back link */
+.back-link {
+  display: block;
+  text-decoration: none;
+  color: #4a90e2; /* Matches products.css primary color */
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: fit-content;
+  transition: color 0.2s, background 0.2s;
+}
+
+.back-link:hover {
+  color: #357abd;
+  background: #f1f1f1;
+}
+
+/* Empty orders message */
+.empty-orders {
+  font-size: 18px;
+  color: #d32f2f; /* Red for emphasis */
+  text-align: center;
+  padding: 20px;
+  background: #ffebee;
+  border-radius: 8px;
+}
+
+/* Order card */
+.order-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Order header */
+.order-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* Order details */
+.order-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.order-card strong {
+  color: #111;
+  font-weight: 500;
+}
+
+/* Total amount */
+.total-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #20ca67; /* Matches products.css for price */
+  margin: 10px 0;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e8f5e9;
+  border-radius: 5px;
+}
+
+/* Items list */
+.order-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.order-card li {
+  font-size: 14px;
+  color: #333;
+  padding: 5px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.order-card li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-orders {
+    padding: 15px;
+  }
+
+  .admin-orders h1 {
+    font-size: 24px;
+  }
+
+  .back-link {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .order-card {
+    padding: 10px;
+  }
+
+  .order-card h3 {
+    font-size: 18px;
+  }
+
+  .order-card p {
+    font-size: 13px;
+  }
+
+  .total-amount {
+    font-size: 15px;
+    padding: 4px 8px;
+  }
+
+  .order-card li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-orders {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .admin-orders h1 {
+    font-size: 20px;
+  }
+
+  .back-link {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .order-card {
+    margin-bottom: 15px;
+  }
+
+  .order-card h3 {
+    font-size: 16px;
+  }
+
+  .order-card p {
+    font-size: 12px;
+  }
+
+  .total-amount {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+
+  .order-card li {
+    font-size: 12px;
+  }
+}
